@@ -1,9 +1,12 @@
 {
+  "homepage": "https://averagejow.github.io/webdemo",
   "name": "webdemo",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
@@ -12,7 +15,8 @@
   "dependencies": {
     "gh-pages": "^6.3.0",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "react-router": "^8.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.29.7",

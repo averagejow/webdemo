@@ -1,11 +1,10 @@
-import langga from '../assets/maic.jpg'
+import Menu from '../components/Menu'
 
 
 function Section(){
     return (
         <div className='flex flex-col justify-center items-center gap-y-10'>
-            <p className='text-3xl'>AKONG PALANGGA HE HE HE HE</p>
-            <img src={langga} alt="" />
+            <Menu />
         </div>
     )
 }

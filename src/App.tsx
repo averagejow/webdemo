@@ -1,24 +1,18 @@
-import { createHashRouter, RouterProvider } from 'react-router'
 import Home from './components/Home'
+import { Route, Routes } from 'react-router'
 import './App.css'
 
-const router = createHashRouter([
-  {
-    path: "/",
-    element: <Home />
-  },
-
-  {
-    path: "/home", 
-    element: <Home />,
-  }
-])
 
 function App() {
 
   return (
     <div className='flex flex-col w-100 h-100'>     
-        <RouterProvider router={router}/>
+        <a href='#/home'>Home</a>
+
+        <Routes>
+          <Route path="/home" element={<Home />}/>
+        </Routes>
+
     </div>          
   )
 }

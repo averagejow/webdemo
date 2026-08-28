@@ -10,6 +10,7 @@ function App() {
         <a href='#/home'>Home</a>
 
         <Routes>  
+          <Route index element={<Home />}/>
           <Route path="/home" element={<Home />}/>
           <Route path='/section' element={<Section />}/>
         </Routes>

@@ -6,7 +6,7 @@ import './App.css'
 function App() {
 
   return (
-    <div className='flex flex-col w-100 h-100'>     
+    <div className='flex flex-col w-full h-full justify-center items-center'>     
         <a href='#/home'>Home</a>
 
         <Routes>  

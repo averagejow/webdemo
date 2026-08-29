@@ -10,7 +10,7 @@ interface InputDetails {
     placeholder?: string
 }
 
-export const myMenu = ["Home", "Menu", "About Us"]
+export const myNavMenu = ["Home", "Menu", "About Us"]
 
 export const myCarouselImage = [
     "https://images.pexels.com/photos/4768962/pexels-photo-4768962.jpeg",

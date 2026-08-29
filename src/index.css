@@ -1,2 +1,7 @@
 @import "tailwindcss";
 
+@layer base {
+    button {
+        @apply text-white/85 bg-black/60 shadow-2xs rounded-2xl hover:bg-black/70 cursor-pointer active:bg-black/60 text-2xl active:scale-103 tracking-wider font-extralight hover:scale-105 duration-300 text-center
+    }
+}

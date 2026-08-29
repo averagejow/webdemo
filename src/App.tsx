@@ -4,8 +4,20 @@ import AboutUs from './components/AboutUs'
 import Menu from './components/Menu'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import { Route, Routes } from 'react-router'
+import { HashRouter, useRoutes } from 'react-router'
 import './App.css'
+
+function AppRoutes() {
+  const element = useRoutes([
+    { path: "/", element: <Home />},
+    { path: "/home", element: <Home />},
+    { path: "/menu", element: <Menu />},
+    { path: "/about us", element: <AboutUs />}
+  ])
+
+  return element
+}
+
 
 function App() {
 
@@ -13,12 +25,9 @@ function App() {
     <div className='flex flex-col w-full h-full justify-center items-center bg-black/10'>     
         <Navbar menuList={myNavMenu}/>
         
-        <Routes>  
-          <Route index element={<Home text="All day buffey by Maica's Kitchen"/>} />
-          <Route path="/home" element={<Home text="All day buffey by Maica's Kitchen"/>}/>
-          <Route path='/menu' element={<Menu />}/>
-          <Route path='/about Us' element={<AboutUs/>}/>
-        </Routes>
+        <HashRouter>
+          <AppRoutes />
+        </HashRouter>
 
         <Footer />
     </div>          

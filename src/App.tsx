@@ -14,7 +14,7 @@ function App() {
     <div className='flex flex-col w-full h-full justify-center items-center bg-black/10'>     
         <Navbar menuList={myNavMenu}/>                
         <Routes>
-          <Route path='/' element={<Home />}/>
+          <Route index element={<Home />}/>
           <Route path='/home' element={<Home />}/>
           <Route path='/menu' element={<Menu />}/>
           <Route path='/about us' element={<AboutUs />}/>

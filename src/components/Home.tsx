@@ -2,7 +2,7 @@ import Carousel from '../components/Carousel'
 import ScrollReveal from './ScrollReveal';
 import Form from '../components/Form'
 import { myCarouselImage, myInputData } from './Data';
-import { useNavigate } from 'react-router'
+import { HashRouter, useNavigate } from 'react-router'
 
 
 interface HomeProps {
@@ -33,17 +33,18 @@ function Home({text}: HomeProps) {
                         
                         <div className='flex flex-col w-screen h-150 items-center gap-y-5'>
                             <Carousel imageSource={myCarouselImage} />
+                            
                             <div className='flex flex-row flex-wrap w-full justify-center items-center gap-x-10 gap-y-5 px-20 transition-all duration-300 ease-in-out'>                            
-                                <button onClick={() => navigate("/Menu")} className='w-150 h-15'>Explore</button>
-                                <button onClick={() => scrollTo('Appointment')} className='w-150 h-15'>Reservation</button>
-                            </div>                        
+                                {/*<button onClick={() => navigate("/menu")} className='w-150 h-15'>Explore</button>*/}
+                                <button onClick={() => scrollTo('appointment')} className='w-150 h-15'>Reservation</button>
+                            </div>                                                  
                         </div>                        
                     </div>
                 </section>
             </ScrollReveal>           
 
             <ScrollReveal>
-                <section id="Appointment" className='scroll-reveal'>
+                <section id="appointment" className='scroll-reveal'>
                     <div className='flex flex-col w-screen h-full justify-center items-center gap-y-10 md:flex-row pb-40 md:flex-wrap'>
                         <div className='flex flex-col gap-y-5 gap-x-40 md:flex-row sm:flex-col [&_h1]:text-2xl md:[&_h1]:text-3xl [&_h1]:font-semibold [&_p]:text-2xl transition-all duration-300 ease-in-out'>
                             <div className='flex flex-col gap-y-5'>

@@ -8,7 +8,7 @@ function DateInput() {
     
     return(       
         <Datepicker        
-            className="text-center text-black/85 h-full w-full rounded-2xl"                                        
+            className="text-center text-cocoa h-10 w-60 bg-khaki/60 rounded-2xl"                                        
             selected={selectedDate}
             onChange={date => setSelectedDate(date)}
             placeholderText="Select Date"            

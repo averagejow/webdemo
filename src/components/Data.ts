@@ -10,7 +10,10 @@ interface InputDetails {
     placeholder?: string
 }
 
+
 export const myNavMenu = ["Home", "Menu", "About Us"]
+
+export const myHomeText = "All day buffet by Maica's Kitchen"
 
 export const myCarouselImage = [
     "https://images.pexels.com/photos/4768962/pexels-photo-4768962.jpeg",
@@ -21,14 +24,11 @@ export const myCarouselImage = [
     "https://images.pexels.com/photos/29086309/pexels-photo-29086309.jpeg"
 ]
 
-export const imageIds = [
-    '4768962',
-    '34307854',
-    '4005229',
-    '7245469',
-    '35247187',
-    '29086309',
-    '34307854'
+export const colorIds = [
+    '#F3E9DC',
+    '#C08552',
+    '#5E3023',
+    '#895737',
 ]
 
 export const myInputData = [

@@ -1,7 +1,46 @@
 @import "tailwindcss";
 
+@theme {
+    --color-linen: #F5F1EA;
+    --color-khaki: #D7C9B8;
+    --color-camel: #B2967D;
+    --color-cocoa: #7D5A44;
+}
+
 @layer base {
-    button {
-        @apply text-white/85 bg-black/60 shadow-2xs rounded-2xl hover:bg-black/70 cursor-pointer active:bg-black/60 text-2xl active:scale-103 tracking-wider font-extralight hover:scale-105 duration-300 text-center
+    #root {
+        @apply text-cocoa font-semibold
     }
+    #home {
+        @apply text-cocoa
+    }
+
+    #arrows {
+        @apply cursor-pointer rounded-full p-3 hover:bg-cocoa/85 hover:text-khaki
+    }
+    
+    #nav {
+        @apply bg-cocoa/85 text-linen active:bg-cocoa/90 shadow-2xl
+    }
+
+    #nav-link {
+        @apply hover:bg-cocoa/70 hover:font-semibold
+    }
+
+    button {
+        @apply text-linen bg-cocoa/85 border-2 border-cocoa shadow-2xs rounded-2xl hover:bg-cocoa/90 cursor-pointer active:bg-cocoa/80 text-2xl font-light active:scale-103 hover:scale-105 duration-300 text-center
+    };
+
+    input {
+        @apply bg-khaki/60 text-cocoa border-2 border-cocoa/80 
+    };
+
+    #footer-container{
+        @apply bg-khaki
+    }
+
+    #footer-details {
+        @apply flex flex-col items-center w-full h-full text-cocoa gap-y-4 [&_h1]:text-2xl
+    }
+
 }

@@ -1,6 +1,6 @@
 import { myNavMenu } from './components/Data'
 import Home from './components/Home'
-import AboutUs from './components/AboutUs'
+//import AboutUs from './components/AboutUs'
 import Menu from './components/Menu'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -15,9 +15,8 @@ function App() {
         <Navbar menuList={myNavMenu}/>                
         <Routes>
           <Route index element={<Home />}/>
-          <Route path='/home' element={<Home />}/>
           <Route path='/menu' element={<Menu />}/>
-          <Route path='/about us' element={<AboutUs />}/>
+        
         </Routes>        
         <Footer />
     </div>          

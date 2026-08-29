@@ -2,7 +2,7 @@ import Carousel from '../components/Carousel'
 import ScrollReveal from './ScrollReveal';
 import Form from '../components/Form'
 import { myCarouselImage, myInputData } from './Data';
-import { HashRouter, useNavigate } from 'react-router'
+//import { useNavigate } from 'react-router'
 
 
 interface HomeProps {
@@ -11,7 +11,7 @@ interface HomeProps {
 
 function Home({text}: HomeProps) {
 
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
 
     const scrollTo = (id: string) => {
         const element = document.getElementById(id)

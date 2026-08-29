@@ -4,7 +4,7 @@ import AboutUs from './components/AboutUs'
 import Menu from './components/Menu'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import { HashRouter, useRoutes } from 'react-router'
+import { useRoutes } from 'react-router'
 import './App.css'
 
 function AppRoutes() {
@@ -23,12 +23,8 @@ function App() {
 
   return (
     <div className='flex flex-col w-full h-full justify-center items-center bg-black/10'>     
-        <Navbar menuList={myNavMenu}/>
-        
-        <HashRouter>
-          <AppRoutes />
-        </HashRouter>
-
+        <Navbar menuList={myNavMenu}/>                
+        <AppRoutes />        
         <Footer />
     </div>          
   )

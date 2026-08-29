@@ -4,19 +4,8 @@ import AboutUs from './components/AboutUs'
 import Menu from './components/Menu'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import { useRoutes } from 'react-router'
+import { Route, Routes } from 'react-router'
 import './App.css'
-
-function AppRoutes() {
-  const element = useRoutes([
-    { path: "/", element: <Home />},
-    { path: "/home", element: <Home />},
-    { path: "/menu", element: <Menu />},
-    { path: "/about us", element: <AboutUs />}
-  ])
-
-  return element
-}
 
 
 function App() {
@@ -24,7 +13,12 @@ function App() {
   return (
     <div className='flex flex-col w-full h-full justify-center items-center bg-black/10'>     
         <Navbar menuList={myNavMenu}/>                
-        <AppRoutes />        
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/home' element={<Home />}/>
+          <Route path='/menu' element={<Menu />}/>
+          <Route path='/about us' element={<AboutUs />}/>
+        </Routes>        
         <Footer />
     </div>          
   )

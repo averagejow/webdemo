@@ -10,7 +10,7 @@ function Navbar({menuList = ["Tab1", "Tab2", "Tab3"]}: NavMenuListProps){
             <ul className="flex flex-row cursor-pointer ml-20">
                 {menuList.map((menu, menuIndex) => (
                     <li key={menuIndex}>
-                        <a href={`#/${menu}`} className="p-3 hover:bg-black/90 hover:scale-105 duration-300 ease-in-out">{menu}</a>
+                        <a href={`#/${menu.toLocaleLowerCase()}`} className="p-3 hover:bg-black/90 hover:scale-105 duration-300 ease-in-out">{menu}</a>
                     </li>
                 ))}                
             </ul>

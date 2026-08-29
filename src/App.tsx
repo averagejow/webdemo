@@ -14,9 +14,10 @@ function App() {
         <Navbar menuList={myNavMenu}/>
         
         <Routes>  
-          <Route path="/Home" element={<Home text="All day buffey by Maica's Kitchen"/>}/>
-          <Route path='/Menu' element={<Menu />}/>
-          <Route path='/About Us' element={<AboutUs/>}/>
+          <Route index element={<Home text="All day buffey by Maica's Kitchen"/>} />
+          <Route path="/home" element={<Home text="All day buffey by Maica's Kitchen"/>}/>
+          <Route path='/menu' element={<Menu />}/>
+          <Route path='/about Us' element={<AboutUs/>}/>
         </Routes>
 
         <Footer />

@@ -23,7 +23,7 @@ function Home() {
                 <section id="home-section">                                                                                
                     <div className='flex flex-col w-full h-full flex-wrap gap-y-10 justify-center items-center'>                                                
                         {/* Home screen text */}                        
-                        <h1 className="text-3xl md:text-5xl lg:text-7xl sm:text-4xl font-extralight transition-all duration-500 ease-in-out">{myHomeText}</h1>                                                    
+                        <h1 className="text-2xl md:text-5xl lg:text-7xl sm:text-4xl font-extralight transition-all duration-500 ease-in-out">{myHomeText}</h1>                                                    
                         <Carousel imageSource={myCarouselImage} />   
 
                         <div className="flex flex-row flex-wrap w-screen px-20 justify-center md:w-full">                                                 

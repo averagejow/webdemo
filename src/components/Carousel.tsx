@@ -17,9 +17,9 @@ function Carousel({imageSource = [], width = 100, height = 80}: CarouselProps) {
     return ( 
         <>          
             {/* image container */}
-            <div className={`flex flex-row w-screen justify-center items-center gap-x-2 px-20`}>                
+            <div className={`flex flex-row w-full justify-center items-center gap-x-2 px-20`}>                
                 {/* button to scrol left */}
-                <div className="">                
+                <div className="translate-x-24 z-10">                
                     <BsChevronLeft id="arrows" onClick={() => slideLeft(-420)} size={60}/>
                 </div> 
 
@@ -31,7 +31,7 @@ function Carousel({imageSource = [], width = 100, height = 80}: CarouselProps) {
                 </div> 
                         
                 {/* button to scrol right */}
-                <div className="">
+                <div className="-translate-x-20 z-10">
                     <BsChevronRight id="arrows" onClick={() => slideLeft(420)} size={60}/>
                 </div>                                 
             </div>                                                         

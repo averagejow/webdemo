@@ -7,7 +7,9 @@
     --color-camel: #B2967D;
     --color-cocoa: #7D5A44;
 
-    --font-betania-patmos: "betania";
+    --font-betania-patmos: "betania"
+
+
 }
 
 @layer base {
@@ -15,7 +17,7 @@
         @apply text-cocoa font-semibold
     }
     #home {
-        @apply text-cocoa font-betania-patmos
+        @apply text-cocoa font-betania-patmos font-normal
     }
 
     #menu {
@@ -39,8 +41,22 @@
     }
 
     button {
-        @apply text-linen bg-cocoa/85 border-2 border-cocoa shadow-2xl shadow-camel rounded-2xl hover:bg-cocoa/90 cursor-pointer active:bg-cocoa/80 text-2xl font-light active:scale-103 hover:scale-105 duration-300 text-center
+        @apply 
+            text-linen 
+            bg-cocoa/85 border-2 
+            border-cocoa shadow-2xl 
+            shadow-camel/70 rounded-2xl 
+            hover:bg-cocoa/90 cursor-pointer 
+            active:bg-cocoa/80 
+            md:text-2xl 
+            font-light 
+            active:scale-103 
+            hover:scale-105 
+            duration-300 
+            text-center   
+            text-xl         
     };
+
     input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button {
         -webkit-appearance: none;
@@ -48,11 +64,11 @@
     };
 
     input {
-        @apply bg-khaki/60 text-cocoa border-2 border-cocoa/80 shadow-2xl shadow-camel 
+        @apply bg-khaki/60 text-cocoa border-2 border-cocoa/80 shadow-2xl shadow-camel/90 
     };
 
     #footer-container{
-        @apply bg-khaki
+        @apply bg-khaki/50
     }
 
     #footer-details {

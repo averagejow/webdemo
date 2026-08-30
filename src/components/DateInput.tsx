@@ -7,7 +7,8 @@ function DateInput() {
     const [selectedDate, setSelectedDate] = useState(null)
     
     return(       
-        <Datepicker        
+        <Datepicker    
+            id=""    
             className="text-center text-cocoa h-10 w-60 bg-khaki/60 rounded-2xl"                                        
             selected={selectedDate}
             onChange={date => setSelectedDate(date)}

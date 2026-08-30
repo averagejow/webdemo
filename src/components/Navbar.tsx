@@ -6,7 +6,7 @@ interface NavMenuListProps {
 
 function Navbar({menuList = ["Tab1", "Tab2", "Tab3"]}: NavMenuListProps){
     return (
-        <div className="fixed flex flex-row w-full h-12 justify-center z-1 top-0">        
+        <div className="fixed flex flex-row w-full h-15 justify-center z-1 top-0">        
             <div id="nav" className=" flex flex-row w-100 h-full items-center justify-center rounded-b-2xl shadow-2xl shadow-cocoa/40">
                 <ul className="flex flex-row cursor-pointer ">
                     {menuList.map((menu, menuIndex) => (

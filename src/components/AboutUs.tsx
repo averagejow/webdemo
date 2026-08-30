@@ -1,6 +1,5 @@
 import ScrollReveal from "./ScrollReveal"
 
-
 function AboutUs() {
     return (        
         <div id="about" className="flex flex-col w-full h-max items-center justify-center p-20 gap-y-20">     

@@ -45,10 +45,10 @@ function Home() {
                                 </div>                                                                                        
                         </div>  
 
-                        <div className='flex flex-col w-full h-full justify-center gap-y-3 md:flex-row md:flex-wrap'>                                                                                                                            
-                                <Form formInput={myInputData}/> 
-                                <p className='text-center pr-10 pl-10'>Our team will contact you shortly after your reservation request.</p>                                        
-                        </div>   
+                        <div className='flex flex-col w-full h-full justify-center gap-y-15 md:flex-row md:flex-wrap'>                                                                                                                            
+                                <Form formInput={myInputData}/>                                                                        
+                                <p className='text-center pr-10 pl-10'>Our team will contact you shortly after your reservation request.</p>  
+                        </div>                          
                     </div>        
                 </section>
             </ScrollReveal>

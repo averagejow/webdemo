@@ -32,7 +32,7 @@ export const colorIds = [
 ]
 
 export const myInputData = [
-    [ "name", "text", "Full Name"],
+    [ "name", "input", "Full Name"],
     [ "contact", "number", "Contact number"],
     [ "email", "email", "Email address"],
     [ "guest", "number", "Number of guest(s)"],

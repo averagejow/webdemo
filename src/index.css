@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Betania+Patmos&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -5,6 +6,8 @@
     --color-khaki: #D7C9B8;
     --color-camel: #B2967D;
     --color-cocoa: #7D5A44;
+
+    --font-betania-patmos: "betania";
 }
 
 @layer base {
@@ -12,7 +15,15 @@
         @apply text-cocoa font-semibold
     }
     #home {
-        @apply text-cocoa
+        @apply text-cocoa font-betania-patmos
+    }
+
+    #menu {
+        @apply font-betania-patmos
+    }
+
+    #about {
+        @apply font-betania-patmos
     }
 
     #arrows {
@@ -24,15 +35,20 @@
     }
 
     #nav-link {
-        @apply hover:bg-cocoa/70 hover:font-semibold
+        @apply hover:bg-cocoa hover:font-semibold
     }
 
     button {
         @apply text-linen bg-cocoa/85 border-2 border-cocoa shadow-2xl shadow-camel rounded-2xl hover:bg-cocoa/90 cursor-pointer active:bg-cocoa/80 text-2xl font-light active:scale-103 hover:scale-105 duration-300 text-center
     };
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    };
 
     input {
-        @apply bg-khaki/60 text-cocoa border-2 border-cocoa/80 shadow-2xl shadow-camel
+        @apply bg-khaki/60 text-cocoa border-2 border-cocoa/80 shadow-2xl shadow-camel 
     };
 
     #footer-container{

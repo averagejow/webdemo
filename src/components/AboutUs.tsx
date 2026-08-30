@@ -3,7 +3,7 @@ import ScrollReveal from "./ScrollReveal"
 
 function AboutUs() {
     return (        
-        <div className="flex flex-col w-full h-max items-center justify-center p-20 gap-y-20">     
+        <div id="about" className="flex flex-col w-full h-max items-center justify-center p-20 gap-y-20">     
             <ScrollReveal>
                 <div className="flex flex-col w-full h-full gap-x-20 gap-y-20 items-center pt-20 sm:flex-col lg:flex-row">      
                     {/* section text */}                                      

@@ -18,7 +18,7 @@ function Form({formInput = [["name", "input", "placeholder"]]}: FormProps) {
                 </div>   
             </form> 
                         
-            <div className="flex flex-row flex-wrap w-full px-20 justify-center">
+            <div className="flex flex-row flex-wrap w-screen px-20 justify-center md:w-full">
                 <button className="w-100 h-15">Book reservation now!</button>
             </div>            
         </div>                                                        

@@ -25,8 +25,8 @@ function Footer() {
             </div>
 
             <div id='footer-details'>
-                <h1>Subscribe</h1>
-                <input className="w-60 h-10 text-center rounded-2xl bg-cocoa/85 text-linen" placeholder="Enter you email here"/>
+                <h1>Newsteller</h1>
+                <input type='input' className="w-60 h-10 text-center rounded-2xl bg-cocoa/85 text-linen" placeholder="Enter you email here"/>
                 <button className='w-60 h-10'>Subscribe</button>
             </div>            
         </div>

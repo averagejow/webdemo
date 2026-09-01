@@ -18,10 +18,10 @@ function Home() {
     }                       
     
     return (
-        <div id="home" className="pt-20 flex flex-col w-full h-max items-center justify-center scroll-smooth ease-in-out overflow-hidden"> 
+        <div id="home" className="pt-30 flex flex-col w-full h-max items-center justify-center scroll-smooth ease-in-out overflow-hidden"> 
             <ScrollReveal>
                 <section id="home-section">                                                                                
-                    <div className='flex flex-col w-full h-full flex-wrap gap-y-10 justify-center items-center'>                                                
+                    <div className='flex flex-col w-full h-full flex-wrap gap-y-5 justify-center items-center'>                                                
                         {/* Home screen text */}                        
                         <h1 className="text-2xl md:text-5xl lg:text-7xl sm:text-4xl font-extralight transition-all duration-500 ease-in-out">{myHomeText}</h1>                                                    
                         <Carousel imageSource={myCarouselImage} />   

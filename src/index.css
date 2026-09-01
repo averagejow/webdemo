@@ -7,9 +7,17 @@
     --color-camel: #B2967D;
     --color-cocoa: #7D5A44;
 
-    --font-betania-patmos: "betania"
+    --font-betania-patmos: "betania"    
+}
 
+@keyframes autoFadeOut{
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
 
+.animate-auto-fade {
+    animation: autoFadeOut 1s ease-out forwards;
+    animation-delay: 2s;
 }
 
 @layer base {
@@ -38,6 +46,10 @@
 
     #nav-link {
         @apply hover:bg-cocoa hover:font-semibold
+    }
+
+    #form-span {
+        @apply text-red-500 absolute top-0 left-0 text-2xl -translate-x-2 -translate-y-3
     }
 
     button {

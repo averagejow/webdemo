@@ -4,9 +4,11 @@ import AboutUs from './components/AboutUs'
 import Menu from './components/Menu'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 import { Route, Routes } from 'react-router'
 import { myNavMenu } from './components/Data'
 import './App.css'
+
 
 
 function App() {
@@ -16,7 +18,8 @@ function App() {
         <div className='fixed left-0 top-0 w-full h-full opacity-15 bg-cover bg-center bg-fixed' style={{backgroundImage: `url(${bgImage}`}}></div>
         <div className='fixed left-0 top-0 w-full h-full bg-caramel'></div>
         <Navbar menuList={myNavMenu}/>                
-        <Routes>
+        <ScrollToTop/>
+        <Routes>          
           <Route index element={<Home />}/>
           <Route path='/home' element={<Home />}/>
           <Route path='/menu' element={<Menu />}/>

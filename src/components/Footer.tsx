@@ -1,8 +1,21 @@
+import { useState } from 'react'
 import { SocialIcon } from 'react-social-icons'
 
-
 function Footer() {
-    return (
+    const [formAlert, setFormAlert] = useState(false)
+    const errorMessage = "Please enter your email"
+    const [inputValue, setInputValue] = useState("")
+
+    const handleSubmit = (e) => {
+        e.preventDefault();        
+        const value = e.target.value
+
+        if(!value){
+            setFormAlert(!formAlert)                       
+        }             
+    } 
+
+    return (        
         <div id='footer-container' className="flex flex-col w-full h-full z-1 justify-center gap-x-5 gap-y-10 p-15 sm:flex-col md:flex-row lg:flex-row duration-300 transition-all ease-in-out">   
             <div id='footer-details'>
                 <h1>Address</h1>
@@ -24,11 +37,20 @@ function Footer() {
                 <p className='text-center'>You may contact us by calling +63977665544 or send us an email at allday@allday.com</p>
             </div>
 
-            <div id='footer-details'>
-                <h1>Newsteller</h1>
-                <input type='input' className="w-60 h-10 text-center rounded-2xl bg-cocoa/85 text-linen" placeholder="Enter you email here"/>
-                <button className='w-60 h-10'>Subscribe</button>
-            </div>            
+            
+            <form id='footer-details' onSubmit={handleSubmit}>
+                <h1>Newsteller</h1>  
+                <div className='relative'>
+                    <input value={inputValue} onChange={(e) => setInputValue(e.target.value)} type='input' className="w-60 h-10 text-center rounded-2xl bg-cocoa/85 text-linen" placeholder="Enter you email here"/>
+                    {(formAlert && (
+                        <div id="alert-box" className='animate-auto-fade absolute flex flex-col -translate-y-22 translate-x-5 bg-linen border border-cocoa text-red-10 w-50 h-8 rounded-2xl justify-center items-center'>
+                            <p className='text-red-500'>{errorMessage}</p>
+                            <div className='absolute w-3 h-3 bg-linen translate-y-4 -translate-x-18 rotate-45  border-r border-b border-cocoa'></div>
+                        </div>
+                    ))}
+                </div>                              
+                <button type='submit' className='w-60 h-10'>Subscribe</button>                                                               
+            </form>                                             
         </div>
     )
 }
